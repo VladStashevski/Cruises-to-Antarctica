@@ -1,0 +1,177 @@
+.benefits__item {
+  &--second p:nth-child(2n + 1) {
+    padding-right: 20px;
+
+    @media (max-width: $to-desktop-width) {
+      padding-right: 0;
+    }
+  }
+
+  &--second p {
+    @media (max-width: $to-tablet-width) {
+      padding-right: 10px;
+    }
+  }
+  &--third p {
+    padding-right: 50px;
+
+    @media (max-width: $to-desktop-width) {
+      padding-right: 1px;
+    }
+
+    @media (max-width: $to-tablet-width) {
+      width: 233px;
+    }
+  }
+}
+
+.benefits {
+  background: $color-pattensblue url("../img/background/background-benefits-desktop.jpg")
+    no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  padding-top: 110px;
+  padding-right: 103px;
+  padding-bottom: 120px;
+  padding-left: 103px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-benefits-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $to-desktop-width) {
+    background: $color-pattensblue url("../img/background/background-benefits-tablet.jpg")
+      no-repeat center top;
+    background-size: cover;
+    padding: 90px 45px 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-benefits-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $to-tablet-width) {
+    background: $color-pattensblue url("../img/background/background-benefits-mobile.jpg")
+      no-repeat center top;
+    background-size: cover;
+    padding: 57px 15px 65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-benefits-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.benefits h2 {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  color: $color-tintsoftangaroa;
+
+  @media (max-width: $to-desktop-width) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $to-tablet-width) {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.benefits ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  list-style: none;
+  text-align: left;
+
+  @media (max-width: $to-desktop-width) {
+    gap: 30px;
+  }
+}
+
+.benefits li {
+  padding: 30px 30px 24px;
+  width: 360px;
+  background-color: $color-aliceblue;
+
+  @media (max-width: $to-desktop-width) {
+    padding-top: 25px;
+    padding-right: 16px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    width: 206px;
+  }
+
+  @media (max-width: $to-tablet-width) {
+    width: 290px;
+  }
+}
+
+.benefits__item svg {
+  margin-bottom: 14px;
+}
+
+.benefits__item {
+  &--first svg {
+    @media (max-width: $to-desktop-width) {
+      width: 21px;
+      height: 26px;
+    }
+  }
+
+  &--second svg {
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    @media (max-width: $to-desktop-width) {
+      margin-bottom: 17px;
+      width: 33px;
+      height: 19px;
+    }
+  }
+
+  &--third svg {
+    margin-top: 8px;
+    margin-bottom: 23px;
+
+    @media (max-width: $to-desktop-width) {
+      margin-bottom: 20px;
+      width: 38px;
+      height: 13px;
+    }
+  }
+}
+
+.benefits__item h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-tintsoftangaroa;
+
+  @media (max-width: $to-desktop-width) {
+    line-height: 25px;
+  }
+
+  @media (max-width: $to-tablet-width) {
+    width: 170px;
+  }
+}
+
+.benefits__item p {
+  margin: 0;
+  line-height: 20px;
+  color: $color-tintsoftangaroa;
+}

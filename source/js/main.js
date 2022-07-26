@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/modals/mobile-menu.js';
+import './modules/modals/maskedinput.js';
 
 // ---------------------------------
 
