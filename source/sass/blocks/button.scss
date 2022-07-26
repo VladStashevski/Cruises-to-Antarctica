@@ -1,0 +1,14 @@
+.button {
+  color: $color-tintsoftangaroa;
+  background-color: $color-aliceblue;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-weight: 600;
+  line-height: 19px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-tintsofviking;
+  }
+}
