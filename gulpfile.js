@@ -75,6 +75,8 @@ const copy = () => {
     'source/fonts/**',
     'source/img/**',
     'source/favicon/**',
+    "source/*.ico",
+    "source/*.webmanifest"
   ], {
     base: 'source',
   })
@@ -88,7 +90,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
