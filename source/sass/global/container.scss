@@ -4,6 +4,13 @@
   margin: 0 auto;
   padding: 0 40px;
 
+  &--inner {
+    @media (max-width: $to-tablet-width) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
   @include vp-1439 {
     padding: 0 32px;
   }
