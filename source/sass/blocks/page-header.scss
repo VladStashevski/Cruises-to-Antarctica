@@ -1,0 +1,84 @@
+.page-header__logotype-link {
+  display: block;
+
+  &:hover {
+    transition: 1s ease;
+    filter: contrast(200%) brightness(10%);
+  }
+
+  &:focus {
+    transition: 1s ease;
+    filter: sepia(100%);
+  }
+
+  &:active {
+    transition: 1s ease;
+    filter: sepia(100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header {
+  position: relative;
+  padding: 0 103px;
+  padding-top: 35px;
+  background: $color-endeavour url("../img/background/background-main-desktop.jpg") no-repeat
+    center top;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-main-desktop@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: $to-desktop-width) {
+    padding: 0 45px;
+    padding-top: 30px;
+    background: url("../img/background/background-main-tablet.jpg") no-repeat center top;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-main-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $to-tablet-width) {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    background-image: none;
+  }
+}
+
+.page-header__logotype-icon {
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
