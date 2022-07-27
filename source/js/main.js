@@ -81,6 +81,13 @@ const enableScroll = function () {
 };
 
 // Маска ввода номера телефона
+/* eslint-disable indent */
+/* eslint-disable eqeqeq */
+/* eslint-disable one-var */
+/* eslint-disable camelcase */
+/* eslint-disable curly */
+/* eslint-disable no-invalid-this */
+/* eslint-disable no-unused-expressions */
 
 window.addEventListener('DOMContentLoaded', function () {
   [].forEach.call(
