@@ -416,6 +416,13 @@ template {
   src: local("Montserrat"), local("Montserrat-bold"), url("../fonts/montserratbold-700.woff2") format("woff2"), url("../fonts/montserratbold-700.woff2") format("woff");
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 320px;
+}
+
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
   box-shadow: inset 0 0 0 1000px #ffffff;
@@ -555,6 +562,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 320px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1488,28 +1496,12 @@ a {
   list-style: none;
 }
 
+.social-link {
+  display: block;
+}
+
 .social-link:hover {
-  -webkit-transition: 1s ease;
-  -o-transition: 1s ease;
-  transition: 1s ease;
-  -webkit-filter: contrast(200%) brightness(10%);
-  filter: contrast(200%) brightness(10%);
-}
-
-.social-link:focus {
-  -webkit-transition: 1s ease;
-  -o-transition: 1s ease;
-  transition: 1s ease;
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
-}
-
-.social-link:active {
-  -webkit-transition: 1s ease;
-  -o-transition: 1s ease;
-  transition: 1s ease;
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
+  fill-opacity: 0.6;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
