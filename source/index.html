@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Проект акселератора - круизы в антарктику">
     <title>Cruises-to-Antarctica</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple180.png">
@@ -15,6 +14,7 @@
     <link rel="preload" href="./fonts/montserratmedium-500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserratsemibold-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserratbold-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <h1 class="visually-hidden">Сайт для бронирования круизов в Антарктику онлайн</h1>
@@ -23,16 +23,10 @@
       <div class="container container--inner">
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <div class="main-navigation__logotype">
-            <a class="page-header__logotype-link" href="https://up.htmlacademy.ru/profession/frontender/12">
+            <a class="page-header__logo" href="https://up.htmlacademy.ru/profession/frontender/12">
               <span class="visually-hidden">логотип Cruises-to-Antarctica</span>
-              <svg class="page-header__logotype-icon page-header__logotype-icon--mobile" width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite/sprite.svg#logotype-mobile"></use>
-              </svg>
-              <svg class="page-header__logotype-icon page-header__logotype-icon--tablet" width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite/sprite.svg#logotype-tablet"></use>
-              </svg>
-              <svg class="page-header__logotype-icon page-header__logotype-icon--desktop" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite/sprite.svg#logotype-desktop"></use>
+              <svg class="logo-img" width="78" height="38" aria-label="Логотип сайта">
+                <use xlink:href="img/sprite_auto.svg#logotype"></use>
               </svg>
             </a>
           </div>
@@ -57,18 +51,18 @@
       </div>
     <!-- Intro block -->
       <section class="intro">
-       <span class="visually-hidden">интро</span>
+        <span class="visually-hidden">интро</span>
         <div class="container">
           <h2>Круизы в&nbsp;Антарктику</h2>
           <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </section>
     </header>
-   <!-- Main block -->
+    <!-- Main block -->
     <main class="page-main">
-   <!-- journey block -->
+    <!-- journey block -->
       <section class="journey" id="journey">
-       <span class="visually-hidden">Удивительное путешествие</span>
+        <span class="visually-hidden">Удивительное путешествие</span>
         <div class="journey__wrapper container">
           <div class="journey__text">
             <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
@@ -76,10 +70,11 @@
           </div>
           <div class="journey__image">
             <picture>
+              <!-- 1x: 290px; 2x: 580px -->
               <source media="(max-width: 767px)" srcset="img/content/photography-of-arctic-penguins-mobile.webp 1x, img/content/photography-of-arctic-penguins-mobile@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 767px)" srcset="img/content/photography-of-arctic-penguins-mobile.jpg 1x, img/content/photography-of-arctic-penguins-mobile@2x.jpg 2x">
+              <!-- 1x: 324px; 2x: 648px -->
               <source media="(max-width: 1023px)" srcset="img/content/photography-of-arctic-penguins-tablet.webp 1x, img/content/photography-of-arctic-penguins-tablet@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 1023px)" srcset="img/content/photography-of-arctic-penguins-tablet.jpg 1x, img/content/photography-of-arctic-penguins-tablet@2x.jpg 2x">
+              <!-- 1x: 560px; 2x: 1120px -->
               <source media="(min-width: 1024px)" srcset="img/content/photography-of-arctic-penguins-desktop.webp 1x, img/content/photography-of-arctic-penguins-desktop@2x.webp 2x" type="image/webp">
               <img src="img/content/photography-of-arctic-penguins-desktop.jpg" srcset="img/content/photography-of-arctic-penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Фотография арктических пингвинов">
             </picture>
@@ -93,7 +88,7 @@
           <ul>
             <li>
               <div class="benefits__item benefits__item--first">
-                <svg class="user__icon user__icon--login" width="27" height="32" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
+                <svg width="27" height="32" viewbox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
                   <use xlink:href="img/sprite/sprite.svg#cruise"></use>
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
@@ -102,7 +97,7 @@
             </li>
             <li>
               <div class="benefits__item benefits__item--second">
-                <svg class="user__icon user__icon--login" width="38" height="21" viewBox="0 0 38 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
+                <svg width="38" height="21" viewbox="0 0 38 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
                   <use xlink:href="img/sprite/sprite.svg#all-inclusive"></use>
                 </svg>
                 <h3>Система все&nbsp;включено</h3>
@@ -112,7 +107,7 @@
             </li>
             <li>
               <div class="benefits__item benefits__item--third">
-                <svg class="user__icon user__icon--login" width="42" height="15" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
+                <svg width="42" height="15" viewbox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка преимуществ">
                   <use xlink:href="img/sprite/sprite.svg#zodiac-boat"></use>
                 </svg>
                 <h3>Экскурсионные туры на Zodiac</h3>
@@ -130,10 +125,11 @@
               <h3>Круиз “Астория”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-astoria-mobile.webp 1x, img/content/cruise-astoria-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-astoria-mobile.jpg 1x, img/content/cruise-astoria-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-astoria-tablet.webp 1x, img/content/cruise-astoria-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-astoria-tablet.jpg 1x, img/content/cruise-astoria-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-astoria-desktop.webp 1x, img/content/cruise-astoria-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-astoria-desktop.jpg" srcset="img/content/cruise-astoria-desktop@2x.jpg 2x" width="260" height="386"
                     alt="Фотография заледеневшего моря">
@@ -158,10 +154,11 @@
               <h3>Круиз “Элайн”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-leonor-mobile.webp 1x, img/content/cruise-leonor-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-leonor-mobile.jpg 1x, img/content/cruise-leonor-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-leonor-tablet.webp 1x, img/content/cruise-leonor-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-leonor-tablet.jpg 1x, img/content/cruise-leonor-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-leonor-desktop.webp 1x, img/content/cruise-leonor-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-leonor-desktop.jpg" srcset="img/content/cruise-leonor-desktop@2x.jpg 2x" width="260" height="386"
                     alt="Фотография яхты в море">
@@ -186,10 +183,11 @@
               <h3>Круиз “Атлантис”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-atlantis-mobile.webp 1x, img/content/cruise-atlantis-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-atlantis-mobile.jpg 1x, img/content/cruise-atlantis-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-atlantis-tablet.webp 1x, img/content/cruise-atlantis-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-atlantis-tablet.jpg 1x, img/content/cruise-atlantis-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-atlantis-desktop.webp 1x, img/content/cruise-atlantis-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-atlantis-desktop.jpg" srcset="img/content/cruise-atlantis-desktop@2x.jpg 2x" width="260" height="386"
                     alt="Фотография льдин в море">
@@ -214,10 +212,11 @@
               <h3>Круиз “Одиссей”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-odyssey-mobile.webp 1x, img/content/cruise-odyssey-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-odyssey-mobile.jpg 1x, img/content/cruise-odyssey-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-odyssey-tablet.webp 1x, img/content/cruise-odyssey-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-odyssey-tablet.jpg 1x, img/content/cruise-odyssey-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-odyssey-desktop.webp 1x, img/content/cruise-odyssey-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-odyssey-desktop.jpg" srcset="img/content/cruise-odyssey-desktop@2x.jpg 2x" width="260" height="386"
                     alt="фотография берега антарктиды">
@@ -242,10 +241,11 @@
               <h3>Круиз “Олимпия”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-olympia-mobile.webp 1x, img/content/cruise-olympia-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-olympia-mobile.jpg 1x, img/content/cruise-olympia-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-olympia-tablet.webp 1x, img/content/cruise-olympia-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-olympia-tablet.jpg 1x, img/content/cruise-olympia-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-olympia-desktop.webp 1x, img/content/cruise-olympia-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-olympia-desktop.jpg" srcset="img/content/cruise-olympia-desktop@2x.jpg 2x" width="260" height="386"
                     alt="Антарктические пингвины">
@@ -270,10 +270,11 @@
               <h3>Круиз “Аврора”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-aurora-mobile.webp 1x, img/content/cruise-aurora-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-aurora-mobile.jpg 1x, img/content/cruise-aurora-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-aurora-tablet.webp 1x, img/content/cruise-aurora-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-aurora-tablet.jpg 1x, img/content/cruise-aurora-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-aurora-desktop.webp 1x, img/content/cruise-aurora-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-aurora-desktop.jpg" srcset="img/content/cruise-aurora-desktop@2x.jpg 2x" width="260" height="386"
                     alt="фотография каменистого берега антарктиды">
@@ -298,10 +299,11 @@
               <h3>Круиз “Леонор”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-atlantis-mobile.webp 1x, img/content/cruise-atlantis-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-atlantis-mobile.jpg 1x, img/content/cruise-atlantis-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-atlantis-tablet.webp 1x, img/content/cruise-atlantis-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-atlantis-tablet.jpg 1x, img/content/cruise-atlantis-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-atlantis-desktop.webp 1x, img/content/cruise-atlantis-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-atlantis-desktop.jpg" srcset="img/content/cruise-atlantis-desktop@2x.jpg 2x" width="260" height="386"
                     alt="Фотография льдин в море">
@@ -326,10 +328,11 @@
               <h3>Круиз “Минион - 1”</h3>
               <div class="cruises__image">
                 <picture>
+                  <!-- 1x: 270px; 2x: 540px -->
                   <source media="(max-width: 767px)" srcset="img/content/cruise-minion-mobile.webp 1x, img/content/cruise-minion-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 767px)" srcset="img/content/cruise-minion-mobile.jpg 1x, img/content/cruise-minion-mobile@2x.jpg 2x">
+                  <!-- 1x: 309px; 2x: 618px; -->
                   <source media="(max-width: 1023px)" srcset="img/content/cruise-minion-tablet.webp 1x, img/content/cruise-minion-tablet@2x.webp 2x" type="image/webp">
-                  <source media="(max-width: 1023px)" srcset="img/content/cruise-minion-tablet.jpg 1x, img/content/cruise-minion-tablet@2x.jpg 2x">
+                  <!-- 1x: 260px; 2x: 520px; -->
                   <source media="(min-width: 1024px)" srcset="img/content/cruise-minion-desktop.webp 1x, img/content/cruise-minion-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/content/cruise-minion-desktop.jpg" srcset="img/content/cruise-minion-desktop@2x.jpg 2x" width="260" height="386"
                     alt="фотография людей на берегу антарктиды">
@@ -358,7 +361,8 @@
         <div class="booking__wrapper container">
           <div class="booking__text">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за&nbsp;3&nbsp;-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            <p>Забронируйте тур за&nbsp;3-6&nbsp;
+              месяцев&nbsp; до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="booking__form">
             <form id="form-feedback" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
@@ -394,10 +398,11 @@
               width="560" height="306" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
             <a target="_blank" href="https://yandex.ru/maps/-/CCQhQVUJwB">
               <picture>
+                <!-- 1x: 290px; 2x: 580px -->
                 <source media="(max-width: 767px)" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" srcset="img/content/map-mobile.jpg 1x, img/content/map-mobile@2x.jpg 2x">
+                <!-- 1x: 324px; 2x: 648px; -->
                 <source media="(max-width: 1023px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x">
+                <!-- 1x: 560px; 2x: 1120px; -->
                 <source media="(min-width: 1024px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/content/map-desktop.jpg" srcset="img/content/map-desktop@2x.jpg 2x" width="560" height="306"
                   alt="Адрес офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
@@ -408,13 +413,13 @@
             <strong>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все
               расскажем.</strong>
             <div class="contacts__address-wrapper">
-              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка локации.">
+              <svg width="18" height="22" viewbox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка локации.">
                 <use xlink:href="img/sprite/sprite.svg#location"></use>
               </svg>
               <p>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
             </div>
             <div class="contacts__address-phone">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка телефона.">
+              <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка телефона.">
                 <use xlink:href="img/sprite/sprite.svg#phone"></use>
               </svg> <a href="tel:88002000000">8-800-200-00-00</a>
             </div>
@@ -428,8 +433,8 @@
         <nav class="footer__navigation">
           <a class="footer__navigation-logotype" href="https://up.htmlacademy.ru/profession/frontender/12">
             <picture>
-              <source media="(max-width: 1023px)" srcset="img/svg/logotype-tablet.svg">
-              <img src="img/svg/logotype-desktop.svg" width="70" height="38" alt="Логотип сайта">
+              <source media="(max-width: 1023px)" srcset="img/svg/logotype.svg">
+              <img src="img/svg/logotype.svg" width="70" height="38" alt="Логотип сайта">
             </picture>
           </a>
           <div class="footer__navigation-wrapper">
@@ -446,7 +451,7 @@
             <li>
               <a href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg width="11" height="20" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка фейсбука.">
+                <svg width="11" height="20" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка фейсбука.">
                   <use xlink:href="img/sprite/sprite.svg#facebook"></use>
                 </svg>
               </a>
@@ -454,7 +459,7 @@
             <li>
               <a href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка инстаграма.">
+                <svg width="20" height="20" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка инстаграма.">
                   <use xlink:href="img/sprite/sprite.svg#instagram"></use>
                 </svg>
               </a>
@@ -462,7 +467,7 @@
             <li>
               <a href="https://twitter.com/htmlacademy">
                 <span class="visually-hidden">Твитер</span>
-                <svg width="20" height="16" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка твиттер.">
+                <svg width="20" height="16" viewbox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка твиттер.">
                   <use xlink:href="img/sprite/sprite.svg#twitter"></use>
                 </svg>
               </a>
