@@ -1,9 +1,10 @@
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 320px;
+}
+
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-white;
 
@@ -113,6 +114,7 @@ html {
 
 body {
   display: flex;
+  min-width: 320px;
   flex-direction: column;
   min-height: 100vh;
   font-size: 14px;
