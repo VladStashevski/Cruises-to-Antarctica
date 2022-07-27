@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 103px;
+  padding: 52px 103px;
   background-color: $color-tintsoftangaroa;
 
   @media (max-width: $to-desktop-width) {
@@ -126,7 +126,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 33px;
+  column-gap: 28px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -141,21 +141,6 @@
 }
 
 .footer__social-wrapper svg {
-  &:hover {
-    transition: 1s ease;
-    filter: contrast(200%) brightness(10%);
-  }
-
-  &:focus {
-    transition: 1s ease;
-    filter: sepia(100%);
-  }
-
-  &:active {
-    transition: 1s ease;
-    filter: sepia(100%);
-  }
-
   @media (max-width: $to-desktop-width) {
     width: 16px;
     height: 16px;
