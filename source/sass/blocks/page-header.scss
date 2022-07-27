@@ -6,7 +6,7 @@
     align-items: center;
   }
 }
-
+/* stylelint-disable length-zero-no-unit */
 .page-header {
   position: relative;
   padding: 0 103px;
@@ -31,7 +31,7 @@
       background-size: cover;
     }
   }
-
+  /* stylelint-disable declaration-block-no-duplicate-properties */
   @media (max-width: $to-tablet-width) {
     padding-top: 20px;
     padding-right: 0px;
