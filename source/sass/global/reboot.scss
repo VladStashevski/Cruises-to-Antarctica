@@ -87,7 +87,7 @@ input:matches([type="email"],
   height: 1px;
   margin: -1px;
 }
-
+/* stylelint-disable declaration-block-no-duplicate-properties */
 .disable-scroll {
   position: relative;
   overflow: hidden;
