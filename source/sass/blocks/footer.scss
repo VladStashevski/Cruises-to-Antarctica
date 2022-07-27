@@ -146,3 +146,20 @@
     height: 16px;
   }
 }
+
+.social-link {
+  &:hover {
+    transition: 1s ease;
+    filter: contrast(200%) brightness(10%);
+  }
+
+  &:focus {
+    transition: 1s ease;
+    filter: sepia(100%);
+  }
+
+  &:active {
+    transition: 1s ease;
+    filter: sepia(100%);
+  }
+}
