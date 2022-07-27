@@ -122,7 +122,7 @@
 .benefits__item svg {
   margin-bottom: 14px;
 }
-
+/* stylelint-disable no-duplicate-selectors */
 .benefits__item {
   &--first svg {
     @media (max-width: $to-desktop-width) {
