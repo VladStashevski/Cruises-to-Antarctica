@@ -523,6 +523,8 @@ input:matches([type="email"],
   margin: -1px;
 }
 
+/* stylelint-disable declaration-block-no-duplicate-properties */
+
 .disable-scroll {
   position: relative;
   overflow: hidden;
@@ -668,12 +670,15 @@ a {
   display: block;
 }
 
+/* stylelint-disable length-zero-no-unit */
+
 .page-header {
   position: relative;
   padding: 0 103px;
   padding-top: 35px;
   background: #1a528c url("../img/background/background-main-desktop.jpg") no-repeat center top;
   background-size: cover;
+  /* stylelint-disable declaration-block-no-duplicate-properties */
 }
 
 .page-header__logotype-icon--tablet,
@@ -695,6 +700,8 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
+
+/* stylelint-disable length-zero-no-unit */
 
 .main-navigation__toggle {
   position: absolute;
@@ -958,6 +965,8 @@ a {
   margin-bottom: 14px;
 }
 
+/* stylelint-disable no-duplicate-selectors */
+
 .benefits__item--second svg {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -1090,6 +1099,8 @@ a {
   margin-bottom: 26px;
 }
 
+/* stylelint-disable no-duplicate-selectors */
+
 .cruises__card dt {
   font-weight: 500;
 }
@@ -1191,6 +1202,8 @@ a {
   text-shadow: 0 0 5px #d8d8d9;
 }
 
+/* stylelint-disable property-no-vendor-prefix */
+
 .booking__input-wrapper input {
   margin-bottom: 16px;
   padding: 11px 15px;
@@ -1251,6 +1264,8 @@ a {
   background-color: #f9fbfd;
 }
 
+/* stylelint-disable selector-pseudo-element-colon-notation */
+
 .booking__input-checkbox input:hover + label::before,
 .booking__input-checkbox input:focus + label::before,
 .booking__input-checkbox input + label:hover::before,
@@ -1258,6 +1273,8 @@ a {
   border: 3px solid #d8d8d9;
   background-color: #d8d8d9;
 }
+
+/* stylelint-disable function-url-quotes */
 
 .booking__input-checkbox input:checked + label::after {
   content: "";
@@ -1468,6 +1485,30 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social-link:hover {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-filter: contrast(200%) brightness(10%);
+  filter: contrast(200%) brightness(10%);
+}
+
+.social-link:focus {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.social-link:active {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

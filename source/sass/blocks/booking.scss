@@ -162,6 +162,7 @@
   }
 }
 
+/* stylelint-disable property-no-vendor-prefix */
 .booking__input-wrapper input {
   margin-bottom: 16px;
   padding: 11px 15px;
@@ -213,7 +214,7 @@
     height: 20px;
   }
 }
-
+/* stylelint-disable selector-pseudo-element-colon-notation */
 .booking__input-checkbox input:hover + label::before,
 .booking__input-checkbox input:focus + label::before,
 .booking__input-checkbox input + label:hover::before,
@@ -222,6 +223,7 @@
   background-color: $color-tintsofquartz;
 }
 
+/* stylelint-disable function-url-quotes */
 .booking__input-checkbox input:checked + label::after {
   content: "";
   position: absolute;
