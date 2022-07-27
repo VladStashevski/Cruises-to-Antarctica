@@ -43,6 +43,7 @@
   z-index: 2;
   width: 560px;
   min-height: 306px;
+  border-style: none;
 
   @media (max-width: $to-desktop-width) {
     width: 324px;

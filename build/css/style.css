@@ -1323,6 +1323,7 @@ a {
   z-index: 2;
   width: 560px;
   min-height: 306px;
+  border-style: none;
 }
 
 .contacts__map-wrapper img {
