@@ -1501,10 +1501,6 @@ a {
 }
 
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 45px;
-  }
-
   .page-header {
     padding: 0 45px;
     padding-top: 30px;
