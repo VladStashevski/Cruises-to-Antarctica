@@ -367,11 +367,11 @@
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <div class="booking__input-wrapper">
                 <label class="visually-hidden" for="feedback-name">Введите ваше имя</label>
-                <input type="text" name="name" id="feedback-name" placeholder="Имя" required>
+                <input type="text" name="name" id="feedback-name" pattern="^[A-Za-zА-Яа-яЁё\s]{1,}" title="Напишите свое имя" placeholder="Имя" required>
               </div>
               <div id="input-tel" class="booking__input-wrapper">
                 <label class="visually-hidden" for="feedback-tel">Введите номер телефона</label>
-                <input type="tel" name="tel" id="feedback-tel" minlength="10" placeholder="Телефон" required>
+                <input type="tel" name="tel" id="feedback-tel" minlength="10" pattern="[+]7\d{10}" title="Используйте формат: +7987654321." placeholder="Телефон" required>
               </div>
               <div class="booking__input-wrapper">
                 <label class="visually-hidden" for="feedback-email">Укажите электронную почту</label>
