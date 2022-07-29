@@ -157,6 +157,7 @@
 
 .main-navigation__mobile-menu {
   background: $color-prussianblue;
+  opacity: 0.6;
   z-index: 2;
 
   position: fixed;
@@ -176,7 +177,7 @@
     &--show {
       position: absolute;
       top: -19px;
-      right: -14px;
+      right: -12px;
       margin-left: auto;
       padding-top: 103px;
       padding-right: 30px;
