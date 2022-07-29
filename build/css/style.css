@@ -424,8 +424,8 @@ body {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
+  -webkit-box-shadow: inset 0 0 0 1000px #d8d8d9;
+  box-shadow: inset 0 0 0 1000px #d8d8d9;
   -webkit-text-fill-color: #000000;
 }
 
@@ -776,6 +776,7 @@ a {
 
 .main-navigation__mobile-menu {
   background: #002b66;
+  opacity: 0.6;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -934,6 +935,7 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  -webkit-column-gap: 40px;
   gap: 40px;
   list-style: none;
   text-align: left;
@@ -1404,9 +1406,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 34px;
   -moz-column-gap: 34px;
   column-gap: 34px;
+  -webkit-column-gap: 34px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1751,14 +1753,18 @@ a {
   }
 
   .footer__social-wrapper ul {
-    -webkit-column-gap: 21px;
-    -moz-column-gap: 21px;
-    column-gap: 21px;
+    -webkit-column-gap: 1px;
+    -moz-column-gap: 1px;
+    column-gap: 1px;
   }
 
   .footer__social-wrapper svg {
     width: 16px;
     height: 16px;
+  }
+
+  .social-link {
+    margin-right: 20px;
   }
 }
 
@@ -1867,7 +1873,7 @@ a {
   .main-navigation__wrapper--show {
     position: absolute;
     top: -19px;
-    right: -14px;
+    right: -12px;
     margin-left: auto;
     padding-top: 103px;
     padding-right: 30px;
@@ -2007,6 +2013,7 @@ a {
 
   .benefits li {
     width: 290px;
+    -webkit-margin-after: 10px;
   }
 
   .benefits__item h3 {
