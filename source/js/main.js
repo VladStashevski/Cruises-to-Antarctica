@@ -88,3 +88,81 @@ const enableScroll = function () {
 /* eslint-disable curly */
 /* eslint-disable no-invalid-this */
 /* eslint-disable no-unused-expressions */
+
+export const iosChecker = () => {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+};
+
+
+const iosVhFix = () => {
+  if (!(!!window.MSInputMethodContext && !!document.documentMode)) {
+    if (iosChecker()) {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+      window.addEventListener('resize', function () {
+        vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      });
+    }
+  }
+};
+
+export {iosVhFix};
+
+
+class ScrollLock {
+  constructor() {
+    this._iosChecker = iosChecker;
+    this._lockClass = this._iosChecker() ? 'scroll-lock-ios' : 'scroll-lock';
+    this._scrollTop = null;
+    this._fixedBlockElements = document.querySelectorAll('[data-fix-block]');
+  }
+
+  _getScrollbarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+  }
+
+  _getBodyScrollTop() {
+    return (
+      self.pageYOffset ||
+      (document.documentElement && document.documentElement.ScrollTop) ||
+      (document.body && document.body.scrollTop)
+    );
+  }
+
+  disableScrolling() {
+    this._scrollTop = document.body.dataset.scroll = document.body.dataset.scroll ? document.body.dataset.scroll : this._getBodyScrollTop();
+    if (this._getScrollbarWidth()) {
+      document.body.style.paddingRight = `${this._getScrollbarWidth()}px`;
+      this._fixedBlockElements.forEach((block) => {
+        block.style.paddingRight = `${this._getScrollbarWidth()}px`;
+      });
+    }
+    document.body.style.top = `-${this._scrollTop}px`;
+    document.body.classList.add(this._lockClass);
+  }
+
+  enableScrolling() {
+    document.body.classList.remove(this._lockClass);
+    window.scrollTo(0, +document.body.dataset.scroll);
+    document.body.style.paddingRight = null;
+    document.body.style.top = null;
+    this._fixedBlockElements.forEach((block) => {
+      block.style.paddingRight = null;
+    });
+    document.body.removeAttribute('data-scroll');
+    this._scrollTop = null;
+  }
+}
+
+window.scrollLock = new ScrollLock();
