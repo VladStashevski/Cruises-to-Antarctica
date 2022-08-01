@@ -2040,6 +2040,10 @@ a {
     row-gap: 25px;
   }
 
+  .cruises li {
+    margin: 7px;
+  }
+
   .cruises__image img {
     width: 270px;
   }
