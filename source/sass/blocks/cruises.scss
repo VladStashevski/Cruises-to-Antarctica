@@ -77,6 +77,11 @@
   &:focus-within .cruises__card {
     display: block;
   }
+
+  @media (max-width: $to-tablet-width) {
+    margin: 7px;
+  }
+
 }
 
 .cruises__image img {
