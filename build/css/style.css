@@ -1850,8 +1850,6 @@ a {
     right: -21px;
     min-height: 568px;
     min-width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 
   .main-navigation--opened .main-navigation__toggle {
@@ -1879,6 +1877,7 @@ a {
     padding-top: 103px;
     padding-right: 30px;
     padding-left: 25px;
+    padding-bottom: 265px;
     min-width: 100%;
     min-height: 587px;
     background-color: #f9fbfd;
