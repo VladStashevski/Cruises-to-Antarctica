@@ -20,41 +20,34 @@
     <h1 class="visually-hidden">Сайт для бронирования круизов в Антарктику онлайн</h1>
     <!-- Header block -->
     <header class="page-header">
-      <div class="container container--inner">
-        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-            <a class="page-header__logo" href="https://up.htmlacademy.ru/profession/frontender/12">
-              <span class="visually-hidden">логотип Cruises-to-Antarctica</span>
-              <svg class="logo-img" width="78" height="38" aria-label="Логотип сайта">
-                <use xlink:href="img/sprite_auto.svg#logotype"></use>
-              </svg>
-            </a>
-          <div class="main-navigation__block">
-            <a class="main-navigation__logotype-popup" href="https://up.htmlacademy.ru/profession/frontender/12">
-              <img src="img/svg/logotype-popup.svg" width="42" height="22" alt="Логотип сайта">
-            </a>
-            <button class="main-navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-navigation__mobile-menu"></div>
-            <div class="main-navigation__wrapper">
-              <ul>
-                <li><a href="#benefits">Преимущества</a></li>
-                <li><a href="#journey">Направления</a></li>
-                <li><a href="#cruises">Ближайшие круизы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
+      <div class="contain">
+        <nav class="main-nav main-nav--nojs">
+          <a class="main-nav__logo" href="#">
+            <svg width="70" height="38" aria-label="Логотип компании">
+              <use xlink:href="img/sprite_auto.svg#logotype"></use>
+            </svg>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--nojs" data-open-modal="mobile-menu">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#key-points" class="main-nav__link">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#catalog" class="main-nav__link">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#booking" class="main-nav__link">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#contacts" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
         </nav>
+        <h1 class="page-header__title">Круизы<br> в Антарктику</h1>
+        <p class="page-header__description">Волшебный мир<br> айсбергов и пингвинов</p>
       </div>
-    <!-- Intro block -->
-      <section class="intro">
-        <span class="visually-hidden">интро</span>
-        <div class="container">
-          <h2>Круизы в&nbsp;Антарктику</h2>
-          <p>Волшебный мир айсбергов и пингвинов</p>
-        </div>
-      </section>
     </header>
     <!-- Main block -->
     <main class="page-main">
@@ -471,6 +464,42 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal--preload" data-modal="mobile-menu">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <section class="main-nav main-nav--modal">
+            <a class="main-nav__logo" href="#">
+              <svg width="70" height="38" aria-label="Логотип компании">
+                <use xlink:href="img/sprite_auto.svg#logotype"></use>
+              </svg>
+            </a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#key-points" class="main-nav__link" data-close-modal>Преимущества</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#catalog" class="main-nav__link" data-close-modal>Направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#booking" class="main-nav__link" data-close-modal>Ближайшие круизы</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#contacts" class="main-nav__link" data-close-modal>Контакты</a>
+              </li>
+            </ul>
+          </section>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="js/main.min.js"></script>
   </body>
 </html>
