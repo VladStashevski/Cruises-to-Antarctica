@@ -1,69 +1,113 @@
 .intro {
-  position: relative;
-  padding: 198px 0 277px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
-  @media (max-width: $to-desktop-width) {
-    padding: 219px 0 276px;
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+      padding-top: 90px;
+      padding-bottom: 92px;
   }
 
-  @media (max-width: $to-tablet-width) {
-    padding: 175px 15px 179px;
-    top: -42px;
-    margin-bottom: -61px;
-    background: url("../img/background/background-main-mobile.jpg") no-repeat center top;
-    background-size: cover;
+  @include vp-767 {
+      padding-top: 56px;
+      padding-bottom: 65px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background/background-main-mobile@2x.jpg");
-      background-size: cover;
-    }
+      // min-height: 640px;
   }
 }
 
-.intro h2 {
+.intro__text {
+  padding-top: 57px;
+  padding-bottom: 60px;
+
+  background-image: url("../img/content/intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 48%;
+
+  @include retina {
+      background-image: url("../img/content/intro-desktop@2x.jpg");
+  }
+
+  @include vp-1023 {
+      min-height: 264px;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      background-image: url("../img/content/intro-tablet.jpg");
+      background-size: 324px 264px;
+      background-position: 100% 50%;
+
+      @include retina {
+          background-image: url("../img/content/intro-tablet@2x.jpg");
+      }
+  }
+
+  @include vp-767 {
+      padding-top: 0;
+      padding-bottom: 219px;
+
+      background-image: url("../img/content/intro-mobile.jpg");
+      background-size: 290px 186px;
+      background-position: 50% 100%;
+
+      @include retina {
+          background-image: url("../img/content/intro-mobile@2x.jpg");
+      }
+  }
+
+
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  width: 40%;
+  max-width: 512px;
+
+  font: 600 28px/150% $ff-montserrat;
+  color: $color-tintsoftangaroa;
+
+  br {
+      display: none;
+
+      @include vp-1023 {
+          display: block;
+      }
+  }
+
+  @include vp-1023 {
+      margin-bottom: 18px;
+      width: auto;
+      max-width: 324px;
+
+      font: 600 26px/140% $ff-montserrat;
+  }
+
+  @include vp-767 {
+      max-width: max-content;
+
+      font: 600 24px/140% $ff-montserrat;
+  }
+}
+
+.intro__description {
   margin: 0;
-  margin-bottom: 13px;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 65px;
-  color: $color-aliceblue;
+  padding: 0;
+  width: 45%;
+  max-width: 512px;
 
-  @media (max-width: $to-desktop-width) {
-    margin-bottom: 12px;
-    font-size: 50px;
-    line-height: 61px;
+  font: 400 16px/150% $ff-montserrat;
+  color: $color-tintsoftangaroa;
+
+  @include vp-1023 {
+      width: auto;
+      max-width: 324px;
+      font: 400 16px/150% $ff-montserrat;
   }
 
-  @media (max-width: $to-tablet-width) {
-    margin-bottom: 12px;
-    font-size: 36px;
-    line-height: 45px;
-  }
-}
-
-.intro p {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px;
-  color: $color-aliceblue;
-
-  @media (max-width: $to-desktop-width) {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  @media (max-width: $to-tablet-width) {
-    width: 199px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.intro h2,
-.intro p {
-  padding-left: 95px;
-
-  @media (max-width: $to-desktop-width) {
-    padding-left: 0;
+  @include vp-767 {
+      max-width: max-content;
   }
 }
