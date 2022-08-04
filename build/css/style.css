@@ -849,7 +849,7 @@ a {
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 .modal__close-btn {
@@ -1902,7 +1902,7 @@ a {
   }
 
   .contain {
-    padding: 0 15px;
+    padding: 0 33px;
   }
 
   .page-header {
@@ -1980,10 +1980,13 @@ a {
   .main-nav--modal .main-nav__link {
     color: #011c40;
     letter-spacing: 0.2px;
+    font-weight: 500;
   }
 
   .main-nav--nojs {
     margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .main-nav--nojs ~ .page-header__title {
