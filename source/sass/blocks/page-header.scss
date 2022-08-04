@@ -1,69 +1,92 @@
-.page-header__logotype-link {
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-  }
-}
-/* stylelint-disable length-zero-no-unit */
 .page-header {
+  min-height: 650px;
   position: relative;
-  padding: 0 103px;
-  padding-top: 35px;
-  background: $color-endeavour url("../img/background/background-main-desktop.jpg") no-repeat
-    center top;
+  background-color: $color-tintsoftangaroa;
+  background-image: url('../img/background/background-main-desktop.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/background-main-desktop@2x.jpg");
-    background-size: cover;
+  @include retina {
+      background-image: url('../img/background/background-main-desktop@2x.jpg');
   }
 
-  @media (max-width: $to-desktop-width) {
-    padding: 0 45px;
-    padding-top: 30px;
-    background: url("../img/background/background-main-tablet.jpg") no-repeat center top;
-    background-size: cover;
+  @include vp-1023 {
+      min-height: 638px;
+      background-image: url('../img/background/background-main-tablet.jpg');
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background/background-main-tablet@2x.jpg");
-      background-size: cover;
-    }
+      @include retina {
+          background-image: url('../img/background/background-main-tablet@2x.jpg');
+      }
   }
-  /* stylelint-disable declaration-block-no-duplicate-properties */
-  @media (max-width: $to-tablet-width) {
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    background-image: none;
+
+  @include vp-767 {
+      min-height: 500px;
+      background-image: url('../img/background/background-main-mobile.jpg');
+
+      @include retina {
+          background-image: url('../img/background/background-main-mobile@2x.jpg');
+      }
   }
 }
 
-.page-header__logotype-icon {
-  &--tablet,
-  &--desktop {
-    display: none;
+.page-header__title {
+  margin-top: 198px;
+  margin-bottom: 14px;
+  margin-left: 95px;
+
+  font: 700 54px/64.8px $ff-montserrat;
+  color: $color-aliceblue;
+  text-align: left;
+
+  br {
+      display: none;
   }
 
-  @media (min-width: $tablet-width) {
-    &--tablet {
-      display: block;
-    }
+  @include vp-1023 {
+      margin-left: 0;
+      margin-top: 218px;
 
-    &--mobile {
-      display: none;
-    }
+      font: 700 50px/60px $ff-montserrat;
   }
 
-  @media (min-width: $desktop-width) {
-    &--tablet {
-      display: none;
-    }
+  @include vp-767 {
+      margin-left: 0;
+      margin-top: 134px;
+      margin-bottom: 12px;
 
-    &--desktop {
-      display: block;
-    }
+      font: 700 36px/45px $ff-montserrat;
+
+      br {
+          display: block;
+      }
   }
 }
+
+.page-header__description {
+  margin: 0 0 30px 95px;
+  padding: 0;
+
+  font: 400 20px/24px $ff-montserrat;
+  color: $color-aliceblue;
+  text-align: left;
+
+  br {
+      display: none;
+  }
+
+  @include vp-1023 {
+      margin-left: 0;
+      font: 400 18px/21.6px $ff-montserrat;
+  }
+
+  @include vp-767 {
+      margin-left: 0;
+      font: 400 16px/22.4px $ff-montserrat;
+
+      br {
+          display: block;
+      }
+  }
+}
+
