@@ -176,6 +176,11 @@
   font: 500 16px/19.2px $ff-montserrat;
   color: $color-aliceblue;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
   @include vp-1023 {
       font: 14px/16.8px $ff-montserrat;
   }
