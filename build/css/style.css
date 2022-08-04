@@ -782,6 +782,11 @@ a {
   color: #f9fbfd;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus {
+  opacity: 0.7;
+}
+
 .modal {
   position: fixed;
   top: 0;
